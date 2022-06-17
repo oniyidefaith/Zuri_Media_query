@@ -14,7 +14,7 @@ body{
 }
 .text-area{
     text-align: center;
-    margin-top: 15%;
+    margin-top: 12%;
     box-sizing: border-box;
 }
 .fill{
@@ -25,7 +25,7 @@ h3{
     font-family: Poppins;
     font-size: 25pt;
     width: 30%;
-    margin-left: 15%;
+    margin-left: 8%;
     font-weight: 700;
     font-style: bold;
 }
@@ -33,73 +33,126 @@ p{
     color: #fff;
     font-family: Poppins;
     font-size: 11pt; 
-    width: 49.9%;
+    width: 30%;
     text-align: left;
-    margin-left: 15%;
+    margin-left: 10%;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 300px;
+	max-width: 100%;
+}
+.form {
+    margin-left: 0%;
+    width: 150%;
+	align-content: center;
+	text-align: center;
+	margin-left: 10%;
+	margin-top: 10%;
+}
+
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 50%;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+.submit {
+	background-color:  hsl(154, 59%, 51%);
+	border: 2px solid  hsl(154, 59%, 51%);
+    cursor: pointer;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+	margin-top: 10%;
+	width: 50%;
+	margin-bottom: 8%;
 }
 button{
-    margin-top: 15%;
-    background-color: hsl(248, 32%, 49%);
-    width: 300px;
-    height: 20px;
-    text-align: center;
-    color: #fff;
-    border-radius: 10px;
-    border: none;
-    padding-bottom: 10%;
-    padding-top: 5%;
+    background-color:  hsl(248, 32%, 49%);
+	border: 2px solid  hsl(248, 32%, 49%);
+    cursor: pointer;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
 }
-.form{
-    background-color: #fff;
-    height: 80%;
-    width: 80%;
-    align-self: center;
-    text-align: center;
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 10px;
-}
-input{
-    margin-top: 20px;
-    width: 90%;
-    height: 40px;
-    border-radius: 2px;
-    border: 1px solid hsl(246, 25%, 77%);
-    text-align: left;
-    text-indent: 8%;
-    text-decoration: solid;
-    font-weight: 600;
-}
-.submit{
+.fill{
     margin-top: 10%;
-    background-color: hsl(154, 59%, 51%);
-    width: 250px;
-    height: 20%;
-    padding: 5%;
-    color: #fff;
-    border-radius: 5px;
-    border: none;cursor: pointer;
 }
-.submit:active{
-    color: hsl(0, 100%, 74%);
-    
-}
-.link{
-    color:  hsl(246, 25%, 77%) !important;
-    font-weight: 600;
-    font-family: poppins;
-    font-size: 8pt;
-    padding-bottom: 5%;
-    margin-top: 20px;
-}
-a{
-    text-decoration: none;
-    color: hsl(0, 100%, 74%);
-    font-weight: 700;
-}
-.alert-message{
-    visibility: hidden;
+.terms{
+	color: hsl(246, 25%, 77%);
+	width: 90%;
 }
 @media screen and (max-width:375px) {
   
@@ -132,7 +185,15 @@ p{
     
 }
 button{
-    width: 40%;
+    width: 50%;
     padding-bottom: 12%;
+	align-self: center;
+	margin-left: 25%;
+}
+.fill{
+	margin-left: 10%;
+}
+.submit{
+	margin-left: 5%;
 }
 } 

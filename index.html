@@ -14,23 +14,37 @@
         <p>see how experienced developers solve  problems in real-time.Watching  scripted tutorials is great but  understanding how developers think is  invaluable.</p></b> </div>
         <div class="fill">
             <button><b>Try it free 7days then </b>$20/mo. Thereafter.</button><br>
-        <div class="form">
-            <form action="fill">
-                
-                <label for="fill">
-                    <input class="form-"Field type="text" placeholder="First Name" id="first">
-                    <small class="alert-message">Error</small>
-                    <input type="text" name="text" id="last" placeholder="Last Name" required><br>
-                    <input type="email" name="text" id="mail" placeholder="Email Address" required><br>
-                    <input type="password" name="text" id="pwd" placeholder="Password" required>
-                    <button class="submit" onclick="validation()">CLAIM YOUR FREE TRIAL</button><br>
-                    <p class="link"><b>By clicking the button you are agreeing to our <a href="#"><b>Terms and Services</b></a></b> </p>
-                </label>
-            </form>
-        </div>
+            <div class="container">
+                <form id="form" class="form">
+                    <div class="form-control">
+                        <input type="text" placeholder="First-name" id="First-Name" />
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" placeholder="Last Name" id="Last-Name" />
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <input type="email" placeholder="Email" id="email"/>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <input type="password" placeholder="Password" id="password"/>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <p class="terms"><b>By clicking this button you are agreeing to our <a href="#"> Terms and services</a></b></p>
+                    <button class="submit">Claim Your free trial</button>
+                </form>
+            </div>
         </div><br>
    
 </div>
 </body>
 <script src="index.js"></script>
-</html>
+</html>  
